@@ -1,4 +1,4 @@
-<header class="session-controls">
+<header class="session-controls row">
   <ul class="session-control-options">
   <%- if user_signed_in? -%>
     <li><%= link_to t('user.sign_out'), destroy_user_session_path, method: :delete, class: 'sign-out' %></li>

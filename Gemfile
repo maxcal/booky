@@ -5,6 +5,7 @@ ruby '2.1.1'
 gem 'rails', '4.1.6'
 gem 'unicorn', '~> 4.8.3' # Use unicorn as the app server
 gem 'dotenv-rails', '~> 1.0.2' # Loads environment variables from `.env` file.
+gem 'simple_form', '~> 3.0.2' # Forms made easy for Rails! It's tied to a simple DSL, with no opinion on markup.
 
 # == DB ==========================================================
 gem 'pg', '~> 0.17.1' # postgres
@@ -13,9 +14,7 @@ gem 'pg', '~> 0.17.1' # postgres
 gem 'sass-rails', '~> 4.0.3' # Use SCSS for stylesheets
 gem 'uglifier', '>= 1.3.0' # Use Uglifier as compressor for JavaScript assets
 gem 'jquery-rails' # Use jquery as the JavaScript library
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'foundation-rails', '~> 5.4.5.0' # Advanced responsive framework
 
 # == Security ====================================================
 gem 'devise', '~> 3.4.1'
