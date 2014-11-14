@@ -35,7 +35,7 @@ group :development, :test do
   gem 'guard-rspec', '~> 4.3.1' # Guard::RSpec automatically run your specs (much like autotest).
   gem 'zeus', '~> 0.15.3'   # Boot any rails app in under a second
   gem 'database_cleaner', '~> 1.3.0'# Strategies for cleaning databases. Can be used to ensure a clean state for testing.
-  gem 'capybara', '~> 2.2.1' # Capybara is an integration testing tool for rack based web applications.
+  gem 'capybara', '~> 2.4.4' # Capybara is an integration testing tool for rack based web applications.
   gem "terminal-notifier-guard", "~> 1.5.3", require: false # Show test status indicators on Mac OS X
   gem 'simplecov', require: false # Used to generate test coverage reports
 end
