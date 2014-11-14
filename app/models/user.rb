@@ -14,7 +14,7 @@
 #  current_sign_in_ip     :inet
 #  last_sign_in_ip        :inet
 #  forename               :string(255)
-#  surename               :string(255)
+#  surname                :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
 #
@@ -24,4 +24,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  devise :omniauthable, omniauth_providers: Devise.omniauth_configs.keys
+
+  has_many :authentications
 end

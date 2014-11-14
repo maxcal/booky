@@ -14,7 +14,7 @@
 #  current_sign_in_ip     :inet
 #  last_sign_in_ip        :inet
 #  forename               :string(255)
-#  surename               :string(255)
+#  surname                :string(255)
 #  created_at             :datetime
 #  updated_at             :datetime
 #

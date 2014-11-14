@@ -18,6 +18,7 @@ gem 'foundation-rails', '~> 5.4.5.0' # Advanced responsive framework
 
 # == Security ====================================================
 gem 'devise', '~> 3.4.1'
+gem 'omniauth-facebook', '~> 2.0.0'
 
 group :development do
   gem 'annotate', '~> 2.6.5'
