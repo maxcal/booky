@@ -18,7 +18,7 @@ gem 'jquery-rails' # Use jquery as the JavaScript library
 # gem 'bcrypt', '~> 3.1.7'
 
 # == Security ====================================================
-
+gem 'devise', '~> 3.4.1'
 
 group :development do
   gem 'annotate', '~> 2.6.5'
@@ -38,6 +38,11 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4' # Capybara is an integration testing tool for rack based web applications.
   gem "terminal-notifier-guard", "~> 1.5.3", require: false # Show test status indicators on Mac OS X
   gem 'simplecov', require: false # Used to generate test coverage reports
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 2.7.0' # Making tests easy on the fingers and eyes
+  gem 'factory_girl_rails', '~> 4.5.0' # less error-prone, more explicit, and all-around easier than fixtures.
 end
 
 group :production do

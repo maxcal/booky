@@ -28,8 +28,8 @@ guard 'livereload' do
   watch(%r{(app|vendor)(/assets/\w+/(.+\.(css|js|html|png|jpg))).*}) { |m| "/assets/#{m[3]}" }
 end
 
-guard 'yard' do
-  watch(%r{app/.+\.rb})
-  watch(%r{lib/.+\.rb})
-  watch(%r{ext/.+\.c})
-end
+# guard 'yard' do
+#   watch(%r{app/.+\.rb})
+#   watch(%r{lib/.+\.rb})
+#   watch(%r{ext/.+\.c})
+# end

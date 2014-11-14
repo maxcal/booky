@@ -30,5 +30,12 @@ module Booky
     # This setting tells Rails to allow any exceptions to be handled by another application,
     # which is in this case the application router.
     config.exceptions_app = self.routes
+
+    config.generators do |g|
+      g.test_framework :rspec
+      g.integration_tool :rspec
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
+    end
+
   end
 end
