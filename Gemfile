@@ -26,6 +26,7 @@ group :development do
   gem 'better_errors' # better error pages
   gem 'binding_of_caller' # REPL on error pages
   gem 'meta_request' # used for RailsPanel in Google Chrome
+  gem 'guard-yard' # automatically run and update your local YARD Documentation Server
 end
 
 group :development, :test do
