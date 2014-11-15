@@ -37,9 +37,15 @@ RSpec.configure do |config|
   # based on their file location
   config.infer_spec_type_from_file_location!
 
+  include Devise::TestHelpers
+  include Warden::Test::Helpers
+  include FactoryGirl::Syntax::Methods
+  OmniAuth.config.test_mode = true
+
   # clean database before running tests
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
+    Warden.test_mode!
   end
   config.before(:each) do |example|
     # Use really fast transaction strategy for all

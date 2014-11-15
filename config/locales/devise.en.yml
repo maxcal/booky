@@ -3,6 +3,7 @@
 
 en:
   devise:
+
     confirmations:
       new:
         resend_confirmation_instructions: Resend confirmation instructions
@@ -69,7 +70,6 @@ en:
         leave_blank_if_no_change: "(leave blank if you don't want to change it)"
       new:
         sign_up: "Sign up"
-        you_can_sign_up_with_oauth: You can sign up with one of these services
         or_with_password: Or the good old fashioned way
     sessions:
       signed_in: "Signed in successfully."
@@ -81,11 +81,16 @@ en:
         email: 'Email'
         password: 'Password'
         remember_me: 'Remember me'
+        omniauth:
+            sign_up_with: "Sign up with %{provider}"
     unlocks:
       send_instructions: "You will receive an email with instructions about how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions about how to unlock it in a few minutes."
       unlocked: "Your account has been unlocked successfully. Please sign in to continue."
     shared:
+      auth_providers:
+        you_can_sign_up_with_oauth: You can sign up with one of these services
+        sign_up_with: "Sign up with %{provider}"
       links:
         forgot_your_password: "Forgot your password?"
         did_not_receive_confirm_instructions: "Didn't receive confirm instructions?"
