@@ -25,6 +25,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   devise :omniauthable, omniauth_providers: Devise.omniauth_configs.keys
+  rolify
 
   has_many :authentications
   accepts_nested_attributes_for :authentications

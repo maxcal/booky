@@ -21,10 +21,22 @@
 
 FactoryGirl.define do
   factory :user do
-    email 'john.doe@example.com'
+    sequence(:email) { |n| n == 1 ? "john.doe@example.com" : "test#{n}@example.com" }
     #forename 'John'
     #surname 'Doe'
     password 'P4ssword'
     password_confirmation 'P4ssword'
   end
+
+  factory :admin, class: User  do
+    sequence(:username) { |n| n == 1 ? "admin" : "admin-#{n}" }
+    sequence(:email) { |n| n == 1 ? "admin@example.com" : "admin-#{n}@example.com" }
+    password "abc123123"
+    password_confirmation { "abc123123" }
+    confirmed_at Time.now
+    after(:create) do |user|
+      user.add_role(:admin)
+    end
+  end
+
 end

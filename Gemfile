@@ -17,8 +17,10 @@ gem 'jquery-rails' # Use jquery as the JavaScript library
 gem 'foundation-rails', '~> 5.4.5.0' # Advanced responsive framework
 
 # == Security ====================================================
-gem 'devise', '~> 3.4.1'
-gem 'omniauth-facebook', '~> 2.0.0'
+gem 'devise', '~> 3.4'
+gem 'omniauth-facebook', '~> 2.0'
+gem 'cancancan', '~> 1.9'
+gem 'rolify', '~> 3.4'
 
 group :development do
   gem 'annotate', '~> 2.6.5'

@@ -13,8 +13,7 @@
 FactoryGirl.define do
   factory :authentication do
     user nil
-uid "MyString"
-provider "MyString"
+    uid '123456789'
+    provider :facebook
   end
-
 end
